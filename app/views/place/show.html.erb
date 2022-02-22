@@ -1,17 +1,13 @@
 <h1><%= @place.name %></h1>
 
 <h2>Posts</h2>
-
 <ul>
-  <% for post in @place.posts %>
-    <li><%= "#{place.title}, #{place.description},#{place.posted_on},#{place.place_id},#{place.created_at},#{place.updated_at}"" %></li>
-  <% end %>
-</ul>
+    <% for post in @place.post %>
+      <li>
+        <%= post.title %>,<%= post.description %>, <%= post.posted_on >
+    <% end %>
+  </ul>
 
-<p>
-  <a href="/post/new?place_name=<%= @place.name %>">New Post</a>
-</p>
+<a href="/post/new?placeid=<%= @place.id %>"> Add Post</a>
 
-<p><a href="/place">Back to All Place</a></p>
-
-<p><%= button_to "Delete this place", @place, method: :delete %></p>
+<a href="/companies">Back to all places</a>
