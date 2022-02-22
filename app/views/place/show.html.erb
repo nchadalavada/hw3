@@ -1,0 +1,19 @@
+<h1><%= @place.name %></h1>
+
+<h2><%= @place.city %>
+
+<h3>Posts</h3>
+
+<ul>
+  <% for post in @place.posts %>
+    <li><%= "#{contact.last_name}, #{contact.first_name}" %></li>
+  <% end %>
+</ul>
+
+<p>
+  <a href="/post/new?place_id=<%= @place.id %>">New Post</a>
+</p>
+
+<p><a href="/place">Back to All Companies</a></p>
+
+<p><%= button_to "Delete this place", @place, method: :delete %></p>
