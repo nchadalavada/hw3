@@ -1,8 +1,6 @@
 <h1><%= @place.name %></h1>
 
-<h2><%= @place.city %>
-
-<h3>Posts</h3>
+<h2>Posts</h2>
 
 <ul>
   <% for post in @place.posts %>
@@ -11,9 +9,9 @@
 </ul>
 
 <p>
-  <a href="/post/new?place_id=<%= @place.id %>">New Post</a>
+  <a href="/post/new?place_name=<%= @place.name %>">New Post</a>
 </p>
 
-<p><a href="/place">Back to All Companies</a></p>
+<p><a href="/place">Back to All Place</a></p>
 
 <p><%= button_to "Delete this place", @place, method: :delete %></p>
