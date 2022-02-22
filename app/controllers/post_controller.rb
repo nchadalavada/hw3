@@ -14,4 +14,3 @@ class PostController < ApplicationController
       end
     
     end
-end

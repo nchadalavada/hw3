@@ -6,7 +6,7 @@
 
 <ul>
   <% for post in @place.posts %>
-    <li><%= "#{contact.last_name}, #{contact.first_name}" %></li>
+    <li><%= "#{place.title}, #{place.description},#{place.posted_on},#{place.place_id},#{place.created_at},#{place.updated_at}"" %></li>
   <% end %>
 </ul>
 

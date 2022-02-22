@@ -34,4 +34,4 @@ class PlaceController < ApplicationController
             
             end
 end
-
+end
